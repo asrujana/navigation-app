@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+​
+<h1>NAVIGATION APP</h1>
+
+<button onclick="myFunction()">Enter the room no: </button>
+
+<p id="demo"></p>
+<img id="image" src="static\map.jpeg" width="400" height="400">
+
+
+<script>
+function myFunction() {
+  let text;
+  let favDrink = prompt("room no", "200");
+  switch(favDrink) {
+    case "200":
+        text = "Room direction is "
+        document.getElementById("image").src = "static/200.jpg"; 
+        
+        break;
+    case "201":
+        text = "Pepsi is my favorite too!";
+        document.getElementById("image").src = "static/201.jpg"; 
+      break;
+    case "202":
+      text = "Really? Are you sure the Sprite is your favorite?";
+      break;
+    default:
+      text = "I have never heard of that one..";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+​
+</body>
+</html>
