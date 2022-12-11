@@ -13,22 +13,22 @@
 <script>
 function myFunction() {
   let text;
-  let favDrink = prompt("room no", "200");
-  switch(favDrink) {
+  let roomNo = prompt("room no", "200");
+  switch(roomNo) {
     case "200":
         text = "Room direction is "
         document.getElementById("image").src = "static/200.jpg"; 
         
         break;
     case "201":
-        text = "Pepsi is my favorite too!";
+        text = "Room direction is "
         document.getElementById("image").src = "static/201.jpg"; 
       break;
     case "202":
-      text = "Really? Are you sure the Sprite is your favorite?";
+      text = "Room direction is "
       break;
     default:
-      text = "I have never heard of that one..";
+      text = "Room direction is "
   }
   document.getElementById("demo").innerHTML = text;
 }
